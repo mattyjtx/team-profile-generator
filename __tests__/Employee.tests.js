@@ -23,3 +23,9 @@ test('can get name with getName method on employee object', () => {
     const employee = new Employee("Frapp");
     expect(employee.getName()).toBe(employeeName);
 })
+
+test('can get email with getEmail method on employee object', () => {
+    const employeeEmail = "Frapp";
+    const employee = new Employee("Frapp");
+    expect(employee.getEmail()).toBe(employeeEmail);
+})
