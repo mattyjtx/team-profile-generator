@@ -1,7 +1,7 @@
 // node modules
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateTeam = require("./src/page-template.js");
+const generateTeam = require("./page-temp");
 
 // lib modules
 const Engineer = require("./lib/Engineer");
@@ -124,7 +124,7 @@ promptQuestions();
 function createTeam () {
   console.log("new guy", newStaffMemberData)
   fs.writeFileSync(
-    "./output/index.html",
+    "./index.html",
     generateTeam(newStaffMemberData),
     "utf-8"
   );
